@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+section#topo1{
+    width: 100%;
+    background-color: rgb(5, 49, 108);
+    color: white;
+}
+
+div#conthead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+div#conthead span{
+    background-color: white;
+    padding: 2px;
+    border-radius: 5px;
+    color: rgb(5, 49, 108);
+}
+
+div#atend{
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+div#atend a{
+    color: white;
+    text-decoration: none;
+
+    font-size: 0.85em;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+div#atend a#wpp{
+    background-color: rgb(29, 171, 29);
+}
+
+div#atend a#on{
+    background-color: rgb(0, 170, 170);
+}
+
+section#topo2{
+    background-color: white;
+    text-align: center;
+}
+
+section#topo2 a{
+    text-decoration: none;
+}
+
+section#topo2 h1{
+    color: blue;
+    font-size: 2em;
+}
+
+section#topo2 table{
+    width: 100%;
+    height: 100%;
+}
+
+section#topo2 td{
+    background-color: rgb(5, 49, 108);
+    color: white;
+    
+    width: 50%;
+    padding: 12px;
+    font-weight: bold;
+}
+
+section#topo2 td > a{
+    color: white;
+    font-size: 1em;
+}
+
+main > section#principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+section#principal > h1{
+    max-width: 220px;
+    font-size: 2em;
+}
+
+section#principal > p{
+    color: rgb(141, 141, 141);
+    font-size: 1.1em;
+    text-align: justify;
+    padding: 10px 10px;
+}
+
+section#principal > a{
+    background-color: rgb(100, 0, 0);
+    color: white;
+    width: 85%;
+
+    text-decoration: none;
+    font-size: 1.15em;
+
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding: 22px;
+}
+
+section#principal > div#imgp{
+    background: black url(https://www.projetoweb.com.br/sites-padrao-prontos-simples-baratos-lancamentos/padrao1-programado/template/pw-images/box-01.jpg) no-repeat;
+    background-size: cover;
+    
+    margin: auto;
+    margin: 50px 0px;
+    width: 95%;
+    height: 400px;
+}
+
+article#extras{
+    background-color: rgb(5, 49, 108);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    padding: 20px;
+}
+
+article#extras div.ext{
+    border: 1px solid rgba(255, 255, 255, 0.201);
+    width: 70%;
+    height: 500px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    padding: 15px;
+}
+
+div.ext > div#img1{
+    width: 98%;
+    height: 180px;
+    background: black url(https://www.projetoweb.com.br/sites-padrao-prontos-simples-baratos-lancamentos/padrao1-programado/template/pw-images/box-02-01.jpg) no-repeat;
+    background-size: cover;
+}
+
+div.ext p{
+    text-align: center;
+    text-indent: 20px;
+    padding: 5px;
+}
+
+div.ext a{
+    background-color: rgb(100, 0, 0);
+    color: white;
+    width: 70%;
+    height: 70px;
+
+    text-decoration: none;
+    font-size: 1.1em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+    border-radius: 10px;
+}
