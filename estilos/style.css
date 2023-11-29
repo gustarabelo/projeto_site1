@@ -55,9 +55,15 @@ div#atend a{
 div#atend a#wpp{
     background-color: rgb(29, 171, 29);
 }
+div#atend a#wpp:hover{
+    background-color: rgb(23, 148, 23);
+}
 
 div#atend a#on{
     background-color: rgb(0, 170, 170);
+}
+div#atend a#on:hover{
+    background-color: rgb(0, 143, 143);
 }
 
 section#topo2{
@@ -125,6 +131,12 @@ section#principal > a{
     margin-bottom: 30px;
     padding: 22px;
 }
+section#principal > a:hover{
+    width: 100%;
+    padding: 25px;
+    margin-bottom: 24px;
+    transition: width .8s, padding 0.5s, margin 0.5s;
+}
 
 section#principal > div#imgp{
     background: black url(https://www.projetoweb.com.br/sites-padrao-prontos-simples-baratos-lancamentos/padrao1-programado/template/pw-images/box-01.jpg) no-repeat;
@@ -134,10 +146,11 @@ section#principal > div#imgp{
     margin: 50px 0px;
     width: 95%;
     height: 400px;
+    box-shadow: inset 0px 0px 5px rgb(255, 255, 255);
 }
 
 article#extras{
-    background-color: rgb(5, 49, 108);
+    background-color: rgb(7, 50, 106);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,47 +159,109 @@ article#extras{
     padding: 20px;
 }
 
-article#extras div.ext{
-    border: 1px solid rgba(255, 255, 255, 0.201);
-    width: 70%;
-    height: 500px;
-    border-radius: 20px;
+#extras > a.ext{
+    border: 1px solid rgb(84, 102, 120);
+    border-radius: 10px;
+    text-decoration: none;
+
+    width: 75%;
+    height: 520px;
+    margin-bottom: 30px;
 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-flow: column wrap;
     align-items: center;
+}
 
+#extras > a.ext:hover{
+    background-color: rgb(33, 68, 113);
+}
+
+a.ext > div{
+    width: 90%;
+    height: 150px;
+    margin-top: 20px;
+}
+a.ext > h1{
     color: white;
-    padding: 15px;
+    margin-top: 40px;
 }
 
-div.ext > div#img1{
-    width: 98%;
-    height: 180px;
-    background: black url(https://www.projetoweb.com.br/sites-padrao-prontos-simples-baratos-lancamentos/padrao1-programado/template/pw-images/box-02-01.jpg) no-repeat;
-    background-size: cover;
-}
-
-div.ext p{
+a.ext > p{
+    color: white;
+    margin: 10px 0px;
+    padding: 10px;
     text-align: center;
-    text-indent: 20px;
-    padding: 5px;
+    line-height: 1.9em;
 }
 
-div.ext a{
+a.ext > .button{
     background-color: rgb(100, 0, 0);
     color: white;
     width: 70%;
-    height: 70px;
-
-    text-decoration: none;
-    font-size: 1.1em;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin-top: 20px;
+    text-align: center;
     border-radius: 10px;
+    padding: 20px 10px;
+}
+
+#extras > a.ext > #img1{
+    background: black url(https://www.projetoweb.com.br/sites-padrao-prontos-simples-baratos-lancamentos/padrao1-programado/template/pw-images/box-02-01.jpg) no-repeat;
+    background-size: cover;
+}
+#extras > a.ext > #img2{
+    background: black url(https://www.projetoweb.com.br/sites-padrao-prontos-simples-baratos-lancamentos/padrao1-programado/template/pw-images/box-02-02.jpg) no-repeat;
+    background-size: cover;
+}
+#extras > a.ext > #img3{
+    background: black url(https://www.projetoweb.com.br/sites-padrao-prontos-simples-baratos-lancamentos/padrao1-programado/template/pw-images/box-02-03.jpg) no-repeat;
+    background-size: cover;
+}
+
+article#formulario{
+    width: 100%;
+    opacity: 0.5;
+
+    margin: 20px 0px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+}
+article#formulario:hover{
+    opacity: 1;
+    transition: 1s;
+}
+
+#formulario h1{
+    width: 150px;
+    font-size: 1.8em;
+}
+
+#formulario input{
+    background-color: rgb(221, 221, 221);
+    width: 90%;
+    height: 50px;
+
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border: 0px;
+}
+#formulario #itxtbox{
+    background-color: rgb(221, 221, 221);
+    width: 90%;
+    padding-top: 20px;
+    border: 0px;
+    margin-bottom: 5px;
+}
+
+#formulario input[type=submit]{
+    background-color: rgb(100, 0, 0);
+    color: white;
+    font-size: 1.1em;
+}
+
+#formulario iframe{
+    margin: auto;
+    width: 95%;
+    height: 400px;
 }
