@@ -184,6 +184,7 @@ article#extras{
 
 #extras > a.ext:hover{
     background-color: rgb(33, 68, 113);
+    transition: 0.7s;
 }
 
 a.ext > div{
