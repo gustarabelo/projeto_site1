@@ -9,68 +9,90 @@ Desktop: 992px até 1200px
 Grandes telas: acima de 1200px
 */
 
-@media screen and (min-width: 600px) and (max-width:768px) {
-    div#conthead, div#atend{
-        justify-content: space-evenly;
-    }
+@media screen and (min-width: 600px){
 
-    section#topo2 tr{
-        display: inline-flex;
+    div#links{
+        display: flex;
         justify-content: space-evenly;
-        align-items: center;
-    }
-
-    section#topo2 td{
-        background-color: white;
-        padding: 0px 20px;
-        width: 70px;
-    }
-    section#topo2 td:hover a{
-        background-color: rgb(5, 49, 108);
-        color: white;
-        padding: 8px 5px;
-        border-radius: 20px;
-        transition: 0.4s;
     }
     
-    section#topo2 td > a{
+    section#topo2 p{
+        background-color: white;
+        box-sizing: border-box;
+    }
+    
+    section#topo2 p > a{
         color: black;
-        font-size: 0.8em;
+        font-size: 0.9em;
+    }
+    section#topo2 p > a:hover{
+        background-color: rgb(5, 49, 108);
+        color: white;
+        border-radius: 20px;
+        padding: 11px 20px;
+        font-size: 1em;
+
+        transition: 0.5s;
+    }
+    
+}
+
+@media screen and (min-width: 600px) and (max-width:992px) {
+    div#conthead, div#atend{
+        justify-content: space-evenly;
     }
     div#imgtopo{
         background: black url(https://www.projetoweb.com.br/sites-padrao-prontos-simples-baratos-lancamentos/padrao1-programado/template/pw-slider-data/images/1.jpg) no-repeat top center ;
         background-size: cover;
         margin: 0px;
-        width: 98%;
+        width: 100%;
         height: 190px;
     }
-
     main > section#principal {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
         align-items: center;
-        width: 600px;
     }
     section#principal > p{
-        color: rgb(141, 141, 141);
-        font-size: 1.1em;
-        padding: 20px;
+        width: 85%;
+        max-width: 650px;
     }
     
-    section#principal > a{
-        width: 150px;
-        margin: 0px;
+    section#principal .saibamais{
+        width: 200px;
+        margin-left: 10px;
+        margin-bottom: 50px;
     }
-    section#principal > a:hover{
-        width: 150px;
-        padding: 30px;
-        margin: 0px;
-        transition: width .8s, padding 0.5s;
-    }
-
+    
     section#principal > div#imgp{
-        width: 500px;
+        margin: auto;
+    }
+    article#extras{
+        margin-top: 50px;
+    }
+    section#principal > div#imgp{
+        max-width: 500px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    section#topo1{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
     }
     
+    div#conthead{
+        align-items: center;
+    }
+    
+    #conthead .div1{
+        justify-content: center;
+        width: 300px;
+    }
+    
+    div#atend{
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 20px;
+        width: 600px;
+    }
 }
