@@ -94,41 +94,55 @@ section#topo2 h1{
     font-family: 'Roboto Slab', serif;
     font-style: italic;
     font-size: 2.5em;
-    margin: 16px;
+    margin: 25px 0px;
 }
 
 section#topo2 table{
     width: 100%;
     height: 100%;
 }
+div#links{
+    width: 99%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 40px 40px 40px;
+    gap: 2px;
+}
 
-section#topo2 td{
+section#topo2 p{
     background-color: rgb(5, 49, 108);
     color: white;
     
-    width: 50%;
-    padding: 12px;
+    padding: 10px;
+    margin: 0px;
     font-weight: bold;
 }
 
-section#topo2 td > a{
+section#topo2 p > a{
     color: white;
     font-size: 1em;
 }
+
+section#topo2 #cont{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
 
 main > section#principal {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 20px;
+    width: 98%;
 }
 
 section#principal > h1{
     font-family: 'Noto Sans', sans-serif;
     max-width: 220px;
     font-size: 2em;
-    margin: 15px;
+    margin-top: 50px;
 }
 
 section#principal > p{
@@ -136,34 +150,36 @@ section#principal > p{
     font-size: 1.1em;
     text-align: justify;
     padding: 2px 10px;
+    max-width: 90vw;
+    margin-bottom: 30px;
 }
 
 section#principal > a{
     background-color: rgb(100, 0, 0);
     color: white;
-    width: 85%;
+    width: 95%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     text-decoration: none;
     font-size: 1.15em;
 
     border-radius: 10px;
-    margin-bottom: 20px;
-    padding: 22px;
 }
 section#principal > a:hover{
-    width: 100%;
-    padding: 25px;
-    margin-bottom: 24px;
-    transition: width .8s, padding 0.5s, margin 0.5s;
+    padding: 10px;
+    transition: 0.5s;
 }
 
 section#principal > div#imgp{
     background: black url(https://www.projetoweb.com.br/sites-padrao-prontos-simples-baratos-lancamentos/padrao1-programado/template/pw-images/box-01.jpg) no-repeat;
     background-size: cover;
     
-    margin: auto;
+    display: block;
     margin: 50px 0px;
-    width: 95%;
+    width: 90%;
     height: 400px;
     box-shadow: inset 0px 0px 5px rgb(255, 255, 255);
 }

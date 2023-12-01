@@ -37,19 +37,40 @@ Grandes telas: acima de 1200px
         color: black;
         font-size: 0.8em;
     }
+    div#imgtopo{
+        background: black url(https://www.projetoweb.com.br/sites-padrao-prontos-simples-baratos-lancamentos/padrao1-programado/template/pw-slider-data/images/1.jpg) no-repeat top center ;
+        background-size: cover;
+        margin: 0px;
+        width: 98%;
+        height: 190px;
+    }
 
     main > section#principal {
-        align-items: flex-start;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
     }
+    section#principal > p{
+        color: rgb(141, 141, 141);
+        font-size: 1.1em;
+        padding: 20px;
+    }
+    
     section#principal > a{
-        width: 25vw;
-        margin: 10px;
+        width: 150px;
+        margin: 0px;
     }
     section#principal > a:hover{
-        width: 25vw;
+        width: 150px;
         padding: 30px;
-        margin-bottom: 4px;
-        transition: width .8s, padding 0.5s, margin 0.5s;
+        margin: 0px;
+        transition: width .8s, padding 0.5s;
     }
 
+    section#principal > div#imgp{
+        width: 500px;
+    }
+    
 }
