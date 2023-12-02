@@ -126,17 +126,21 @@ section#topo2 #cont{
 
 main > section#principal {
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
+    justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
 }
 
+section#principal #main1{
+    margin-bottom: 30px;
+}
+
 section#principal h1{
     font-family: 'Noto Sans', sans-serif;
-    max-width: 220px;
+    width: 220px;
     font-size: 2em;
-    margin-top: 50px;
 }
 
 section#principal p{
@@ -145,7 +149,7 @@ section#principal p{
     text-align: justify;
     padding: 2px 10px;
     max-width: 90vw;
-    margin-bottom: 30px;
+    margin: 0px 30px 20px 0px;
 }
 
 section#principal .saibamais{
@@ -178,7 +182,8 @@ section#principal div#imgp{
     background: black url(https://www.projetoweb.com.br/sites-padrao-prontos-simples-baratos-lancamentos/padrao1-programado/template/pw-images/box-01.jpg) no-repeat;
     background-size: cover;
     
-    width: 90%;
+    width: 98%;
+    max-width: 438px;
     height: 400px;
     margin-bottom: 20px;
     box-shadow: inset 0px 0px 5px rgb(255, 255, 255);
@@ -190,7 +195,7 @@ article#extras{
     flex-direction: column;
     align-items: center;
     gap: 20px;
-
+    margin-top: 50px;
     padding: 30px;
 }
 
@@ -254,25 +259,36 @@ a.ext > .button{
     background-size: cover;
 }
 
-article#formulario{
-    width: 100%;
-    opacity: 0.5;
-
-    margin: 20px 0px;
+#artc2{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    opacity: 0.5;
 }
-article#formulario:hover{
+#artc2:hover{
     opacity: 1;
     transition: 1s;
 }
 
-#formulario h1{
-    width: 180px;
+#artc2 h1{
+    max-width: 180px;
     font-size: 2em;
     padding: 20px 0px;
+}
+
+#artc2 article#formulario{
+    width: 100%;
+    margin: 20px 0px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+#formulario #inputs1, #inputs2{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
 #formulario input{
@@ -284,6 +300,7 @@ article#formulario:hover{
     border-radius: 5px;
     border: 0px;
 }
+
 #formulario #itxtbox{
     background-color: rgb(221, 221, 221);
     width: 90%;
@@ -297,11 +314,15 @@ article#formulario:hover{
     background-color: rgb(100, 0, 0);
     color: white;
     font-size: 1.2em;
+    width: 100%;
+    margin: 20px 0px;
+}
+#formulario input[type=submit]:hover{
+    cursor: pointer;
 }
 
 #formulario iframe{
-    margin: auto;
-    width: 95%;
+    width: 100%;
     height: 400px;
 }
 
