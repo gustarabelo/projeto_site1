@@ -283,6 +283,10 @@ a.ext > .button{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    align-items: center;
+}
+#formulario form{
+    width: 100%;
 }
 
 #formulario #inputs1, #inputs2{

@@ -67,6 +67,24 @@ Grandes telas: acima de 1200px
         align-items: center;
         gap: 10px;
     }
+    footer{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer #contato{
+        width: 96%;
+        max-width: 900px;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    #contato div{
+        flex-direction: column;
+    }
+    footer #by{
+        width: 96%;
+    }
 }
 @media screen and (min-width: 992px) {
     main > section#principal{
@@ -75,6 +93,7 @@ Grandes telas: acima de 1200px
 }
 @media screen and (min-width: 1038px) {
     #formulario form{
+        width: 1000px;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -93,7 +112,7 @@ Grandes telas: acima de 1200px
         width: 400px;
     }
     #formulario input[type=submit]{
-        width: 870px;
+        width: 1000px;
     }
 }
 
