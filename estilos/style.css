@@ -167,15 +167,14 @@ section#principal a{
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     text-decoration: none;
     font-size: 1.15em;
     border-radius: 10px;
 }
-section#principal a:hover{
-    width: 100%;
-    height: 80%;
-    transition: 0.5s;
+section#principal .scale{
+    scale: 1.1;
+    transition: .9s ;
 }
 
 section#principal div#imgp{
